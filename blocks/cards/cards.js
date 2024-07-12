@@ -26,6 +26,5 @@ export default function decorate(block) {
   function test (par){}
 
   let str = "";
-  console.log(str);
-  console.log();
+ 
 }
