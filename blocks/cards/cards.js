@@ -27,4 +27,5 @@ export default function decorate(block) {
 
   let str = "";
   console.log(str);
+  console.log();
 }
