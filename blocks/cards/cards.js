@@ -29,5 +29,5 @@ export default function decorate(block) {
   </h1>
   </div>
   `
-
+ const text = "Title";
 }
