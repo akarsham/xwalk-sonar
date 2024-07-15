@@ -1,11 +1,10 @@
-import { createOptimizedPicture } from "../../scripts/aem.js";
+import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
-    console.log(row);
     const li = document.createElement('li');
     moveInstrumentation(row, li);
     while (row.firstElementChild) li.append(row.firstElementChild);
@@ -22,10 +21,4 @@ export default function decorate(block) {
   });
   block.textContent = '';
   block.append(ul);
-
-  function test (par){}
-
-  let str = "";
-  console.log(str);
-  console.log();
 }
