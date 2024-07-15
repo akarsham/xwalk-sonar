@@ -1,4 +1,4 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
+import { createOptimizedPicture } from "../../scripts/aem.js";
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
@@ -23,4 +23,11 @@ export default function decorate(block) {
   block.append(ul);
   function fun (){}
   console.log();
+  const html = `
+  <div>
+  <h1>Hello   
+  </h1>
+  </div>
+  `
+
 }
